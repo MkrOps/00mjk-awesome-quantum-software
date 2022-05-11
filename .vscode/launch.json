@@ -5,6 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: Pyramid Application",
+            "type": "python",
+            "request": "launch",
+            "module": "pyramid.scripts.pserve",
+            "args": [
+                "${workspaceFolder}/development.ini"
+            ],
+            "pyramid": true,
+            "jinja": true,
+            "justMyCode": true
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Docker: Attach to Node",
+            "remoteRoot": "/usr/src/app"
+        },
+        {
             "name": "Docker: Python - General",
             "type": "docker",
             "request": "launch",
